@@ -35,7 +35,7 @@ func (y *YuqueParser) Parser(src map[string]interface{}) (err error) {
 		return errors.New("解析 data 失败")
 	}
 	webhookType, ok := data["action_type"].(string)
-	log.Printf("webhookType is %s\n", webhookType)
+	log.Printf("事件类型: %s\n", webhookType)
 	if !ok {
 		return errors.New("解析 action type 失败")
 	}
@@ -144,7 +144,7 @@ func map2struct(src map[string]interface{}, dst interface{}) error {
 	if err != nil {
 		return errors.Wrap(err, "序列化失败")
 	}
-	fmt.Printf("b is %v\n", string(b))
+	//fmt.Printf("b is %v\n", string(b))
 	if err = json.Unmarshal(b, dst); err != nil {
 		return errors.Wrap(err, "反序列化失败")
 	}

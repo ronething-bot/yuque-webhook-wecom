@@ -20,7 +20,7 @@ func NewHook(parser *storage.YuqueParser) *Hook {
 
 func (h *Hook) Handler(c echo.Context) (err error) {
 	token := c.Param("token") // 验证 token
-	log.Printf("token is %s\n", token)
+	//log.Printf("token is %s\n", token)
 	if token != config.Config.GetString("token.webhook") {
 		log.Printf("token 校验失败")
 		return c.JSON(http.StatusInternalServerError, "")

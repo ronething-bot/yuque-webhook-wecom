@@ -1,6 +1,7 @@
 .idea/
 .vscode/
 test/
+bin/
 
 go.sum
 
