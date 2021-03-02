@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+test/
+
+go.sum
+
+config/config.yaml
+yuque.log
+
+yuque-webhook-wecom
+yuque-webhook-wecom.exe

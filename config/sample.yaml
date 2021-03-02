@@ -1,0 +1,5 @@
+token:
+  wecom: xxx # 企业微信机器人 token
+  yuque: xxx # 语雀 personal Access Token 账户设置-Token-新建
+  webhook: xxx # 语雀配置 webhook token 格式: https://xxx.com/webhook/:token
+
